@@ -1,0 +1,513 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<!-- BANNER SECTION -->
+
+<div class="dark:bg-gray-800 bg-gray-50">
+    <div class="mx-auto w-full max-w-[85rem] px-4 sm:px-6 lg:px-8 lg:py-24">
+        <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center">
+            <div class="px-4 pt-4 lg:w-2/3">
+                <h1 class="text-base font-bold leading-7 text-teal-700 dark:text-[#a2c3cf]">Building beautiful
+                    and functional software experiences.</h1>
+                <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">Software
+                    Developer with a passion for UI/UX Design.</p>
+                <div class="flex flex-nowrap gap-6 mt-4">
+                    <div class="flex items-center text-sm font-medium text-slate-500">
+                        <svg class="h-8 w-8 flex-none stroke-current text-slate-400" fill="none" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 4.15h22.5l-2 20.5-9.25 4-9.25-4-2-20.5Z"></path>
+                            <path d="M20.5 9.15H12v5.5h8.5v6l-4.25 2-4.25-2v-2.5"></path>
+                        </svg>
+                        <span class="ml-2.5">HTML</span>
+                    </div>
+                    <div class="flex items-center text-sm font-medium text-slate-500">
+                        <svg class="w-7 h-7" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24"
+                            height="24" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M11.782 5.72a4.773 4.773 0 0 0-4.8 4.173 3.43 3.43 0 0 1 2.741-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.934-2.865 3.137-3.921-.969 1.379-2.44 2.207-4.259 1.231-1.253-.673-2.19-3.438-5.959-3.318ZM6.8 11.979A4.772 4.772 0 0 0 2 16.151a3.431 3.431 0 0 1 2.745-1.687c1.689 0 2.974 1.972 3.758 2.587a5.733 5.733 0 0 0 5.382.935c2-.638 2.933-2.865 3.137-3.921-.97 1.379-2.44 2.208-4.259 1.231-1.253-.673-2.19-3.443-5.963-3.317Z" />
+                        </svg>
+                        <span class="ml-2.5">Tailwind CSS</span>
+                    </div>
+                    <div class="flex items-center text-sm font-medium text-slate-500">
+                        <svg class="h-8 w-8 flex-none stroke-current text-slate-400" fill="none" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M19.924 5 16 11.644 12.075 5H3l13 23L29 5h-9.076Z"></path>
+                            <path d="M19.879 5 16 11.26 12.121 5H8l8 13 8-13h-4.121Z"></path>
+                        </svg>
+                        <span class="ml-2.5">Vue</span>
+                    </div>
+                </div>
+                <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">Over 500+ professionally designed,
+                    fully responsive, expertly crafted component examples you can drop into your Tailwind projects and
+                    customize to your heart’s content.</p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-teal-700 text-white hover:bg-teal-900 duration-700" 
+                        href="{{url_for('hire_me')}}"><span>Want to Hire me ? <span aria-hidden="true"
+                                class="text-slate-400 sm:inline">→</span></span></a>
+                    <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 after:duration-700 dark:ring-white/25 dark:text-white"
+                        href="javascript:void(0)"><span>Let's Connect <span aria-hidden="true"
+                                class="text-black/25 sm:inline dark:text-slate-400">→</span></span></a>
+                </div>
+            </div>
+            <div class="relative z-10 mt-12 select-none lg:flex lg:w-1/3">
+                <div class="z-20 flex flex-col lg:w-full">
+                    <div class="relative p-4">
+                        <div class="absolute bottom-0 left-11 right-0 top-8 bg-slate-900/[0.03] dark:bg-slate-700">
+                        </div>
+                        <div
+                            class="pointer-events-auto relative z-10 w-full max-w-md rounded-lg bg-white dark:bg-gray-700 text-[0.8125rem] leading-5 text-slate-700 shadow-xl shadow-black/5 ring-1 ring-slate-700/10">
+                            <div>
+                                <div class="flex items-center px-3.5 py-2.5 text-slate-400 dark:text-slate-200 ">
+                                    <svg class="mr-2 h-5 w-5 stroke-slate-500" fill="none" viewBox="0 0 24 24"
+                                        stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                    </svg>Search projects...
+                                </div>
+                                <div class="border-t border-slate-400/20 px-3.5 py-3 dark:border-slate-200">
+                                    <div
+                                        class="mb-1.5 text-[0.6875rem] font-semibold text-slate-500 dark:text-slate-200">
+                                        Recent searches</div>
+                                    <div
+                                        class="flex items-center rounded-md p-1.5 dark:text-slate-200 dark:hover:text-white hover:bg-teal-700 hover:text-white">
+                                        <svg class="mr-2.5 h-5 w-5 flex-none dark:stroke-white stroke-slate-400"
+                                            fill="none" viewBox="0 0 24 24" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z">
+                                            </path>
+                                        </svg>Tailwind Labs / Website Redesign
+                                    </div>
+                                    <div
+                                        class="flex items-center rounded-md p-1.5 dark:text-slate-200 hover:bg-teal-700">
+                                        <svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z">
+                                            </path>
+                                        </svg>Laravel LLC / Conference Branding
+                                    </div>
+                                </div>
+                                <div class="border-t border-slate-400/20 px-3.5 py-3 dark:border-slate-200">
+                                    <div
+                                        class="flex items-center rounded-md p-1.5 dark:text-slate-200 hover:bg-teal-700">
+                                        <svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                            </path>
+                                        </svg>Add new file...
+                                    </div>
+                                    <div
+                                        class="flex items-center rounded-md p-1.5 dark:text-slate-200 hover:bg-teal-700">
+                                        <svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M9 13h6m-3-3v6m-9 1V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z">
+                                            </path>
+                                        </svg>Add new folder...
+                                    </div>
+                                    <div
+                                        class="flex items-center rounded-md p-1.5 dark:text-slate-200 hover:bg-teal-700">
+                                        <svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"></path>
+                                        </svg>Add hashtag...
+                                    </div>
+                                    <div
+                                        class="flex items-center rounded-md p-1.5 dark:text-slate-200 hover:bg-teal-700">
+                                        <svg class="mr-2.5 h-5 w-5 flex-none stroke-slate-400" fill="none"
+                                            viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z">
+                                            </path>
+                                        </svg>Add label...
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative ml-6 flex items-center justify-end">
+                        <div class="relative p-4">
+                            <div
+                                class="pointer-events-auto h-6 w-10 rounded-full p-1 ring-1 ring-inset transition duration-200 ease-in-out bg-slate-900/10 ring-slate-900/5 dark:bg-slate-400 dark:ring-slate-300">
+                                <div
+                                    class="h-4 w-4 rounded-full bg-white shadow-sm ring-1 ring-slate-700/10 transition duration-200 ease-in-out">
+                                </div>
+                            </div>
+                            <div class="z-0">
+                                <div
+                                    class="absolute -top-full bottom-2/3 left-0 w-px bg-slate-900/[0.2] [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative p-4">
+                            <div
+                                class="pointer-events-auto relative inline-flex rounded-md bg-white text-[0.8125rem] font-medium leading-5 text-slate-700 shadow-sm ring-1 ring-slate-700/10 hover:bg-slate-50 hover:text-slate-900">
+                                <div class="flex px-3 py-2">
+                                    <svg class="mr-2.5 h-5 w-5 flex-none fill-slate-400">
+                                        <path d="M5 4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v14l-5-2.5L5 18V4Z"></path>
+                                    </svg>Bookmark
+                                </div>
+                                <div class="border-l border-slate-400/20 px-2.5 py-2">12k</div>
+                            </div>
+                            <div class="z-0">
+                                <div
+                                    class="absolute -bottom-8 -top-12 right-0 w-px bg-slate-900/[0.1] dark:bg-slate-400 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                                </div>
+                                <div
+                                    class="absolute -bottom-8 -top-12 left-0 w-px bg-slate-900/[0.1] dark:bg-slate-400 [mask-image:linear-gradient(to_top,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="z-0">
+                            <div
+                                class="absolute -left-12 -right-4 top-0 h-px bg-slate-900/[0.1] dark:bg-slate-400 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                            </div>
+                            <div
+                                class="absolute -right-4 bottom-0 left-0 h-px bg-slate-900/[0.1] dark:bg-slate-400 [mask-image:linear-gradient(to_right,transparent,white_4rem,white_calc(100%-4rem),transparent)]">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HERO SECTION -->
+<div class="dark:bg-gray-900 bg-gray-100">
+    <div class="mx-auto w-full max-w-[85rem] px-4 py-20 sm:px-6 lg:px-8">
+        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-4 gap-10 ">
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+                    </svg>
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I approach innovative solutions that are both
+                    functional and visually appealing.</p>
+                <p class="font-medium dark:text-white">
+                    Creative Problem Solver
+                </p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                    </svg>
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I enjoy getting down to the code and building software
+                    solutions that work flawlessly.</p>
+                <p class="font-medium dark:text-white">
+                    Hands-on Developer
+                </p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                    </svg>
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I'm always learning & staying up-to-date on the latest
+                    technologies to deliver the best.</p>
+                <p class="font-medium dark:text-white">
+                    Fueling Creativity
+                </p>
+            </div>
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700 px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                    </svg>
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I'm excited to take on new challenges and help your
+                    project reach its full potential.</p>
+                <p class="font-medium dark:text-white">
+                    Ready for Lift-Off
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ABOUT ME SECTION -->
+ <div class="dark:bg-gray-800 bg-gray-50">
+    <div class="flex py-20">
+        <div class="mx-auto pl-8">
+            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 pt-4 lg:w-3/4">
+                    <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
+                        About me</p>
+                    <div class="flex flex-nowrap gap-6 mt-4">
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Ms. Heena Jethava</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">+1 Year of Experience</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Dombivli</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m passionate about creating user-friendly and visually appealing web interfaces. 
+                        I enjoy the challenge of taking complex ideas and transforming them into clean, functional code.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
+                        online presence and user experience.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m always looking for new and exciting projects to work on. 
+                        If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
+                    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                        <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-teal-700 text-white hover:bg-teal-900 duration-700"
+                            href="javascript:void(0)"><span>UI/UX Design  <span aria-hidden="true"
+                                    class="text-slate-400 sm:inline">→</span></span></a>
+                        <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 dark:ring-white/25 dark:text-white"
+                            href="javascript:void(0)"><span>Software Development <span aria-hidden="true"
+                                    class="text-black/25 sm:inline dark:text-slate-400">→</span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-2 gap-4 lg:pl-10 lg:pr-28">
+            <div class="grid gap-4">
+                <div class="">
+                    <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/oneflow.jpg') }}" alt="Image 1">
+                </div>
+                <div>
+                    <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 2">
+                </div>
+            </div>
+            <div class="grid gap-4">
+                <div>
+                    <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 3">
+                </div>
+                <div>
+                    <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/blinkit-clone.jpg') }}" alt="Image 4">
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+</div> 
+
+
+
+<!-- FAQ SECTION -->
+<div class="dark:bg-gray-900 bg-gray-100">
+    <section class="py-20 lg:px-24 px-8">
+        <div class="container grid grid-cols-12 gap-6 xl:gap-10">
+          <div class="col-span-12 p-4 border dark:border-slate-500 rounded-xl sm:px-10 sm:py-9 lg:col-span-5 bg-white dark:bg-gray-700">
+            <p class="mt-4 text-3xl flex justify-center font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
+                FAQs</p>
+            <div class="p-4 mb-6 rounded-xl sm:p-6">
+                <div class="flex items-center justify-center gap-3">
+                      <img class="h-auto max-w-full rounded-lg size-24" src="{{ url_for('static', path= './img/faq.gif') }}"
+                            alt="">  
+                </div>
+              </div>
+    
+            <div class="p-4 mb-6 border dark:border-slate-500 rounded-xl sm:p-6">
+              <div class="flex items-center justify-start gap-3">
+                <div class="flex items-center justify-center p-3 border dark:border-slate-500 rounded-2xl text-b300 sm:p-5 dark:text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                      </svg>
+                </div>
+                <div class="">
+                  <h5 class="heading-5 dark:text-white">Still have questions?</h5>
+                  <p class="pt-3 dark:text-white">
+                    Can’t find the answer you’re looking for?Please chat to our
+                    friendly team!
+                  </p>
+                </div>
+              </div>
+            </div>
+      
+            <a href="javascript:void(0)" class="relative flex items-center justify-center overflow-hidden rounded-xl 
+            px-4 py-3 font-semibold  duration-700 after:absolute after:inset-0 after:left-0 after:w-0 after:rounded-xl bg-teal-700 hover:bg-teal-900 text-white after:duration-700 hover:after:w-[calc(100%+2px)] sm:px-8">
+              <span class="relative z-10 dark:text-white">Get In Touch</span>
+            </a>
+          </div>
+      
+          <div class="flex flex-col items-start dark:text-white justify-center col-span-12 gap-6 p-4  rounded-xl sm:p-10 lg:col-span-7 dark:bg-gray-700 bg-white">
+            <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem rounded-2xl aos-init aos-animate" x-data="{ isOpen: false }" >
+                <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                  <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                    Do you have experience with version control systems like Git?
+                  </p>
+                  <div class="faqIcon rotate" x-show="!isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+                  <div class="faqIcon rotate" x-show="isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+                </div>
+                <div class="duration-700" x-show="isOpen">
+                  <p class="pt-3">
+                    Yes, I am proficient in using Git for version control. I understand concepts like branching, merging, and conflict resolution.
+                  </p>
+                </div>
+            </div>
+              
+            <div class="px-4 py-3 overflow-hidden border dark:border-slate-500  dark:text-white faqItem rounded-2xl aos-init aos-animate" x-data="{ isOpen: false }">
+              <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                <p class="text-base font-medium cursor-pointer sm:text-lg pr-20 ">
+                    Have you worked with any API integrations?
+                </p>
+                <div class="faqIcon rotate" x-show="!isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+                  <div class="faqIcon rotate " x-show="isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+              </div>
+              <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                <p class="pt-3 pr-8 cursor-pointer">
+                    Yes, I have experience integrating APIs into web applications. I am comfortable working with API documentation and utilizing libraries or frameworks to interact with APIs efficiently.
+                </p>
+              </div>
+            </div>
+            
+            <div class="px-4 py-3 overflow-hidden border dark:border-slate-500  dark:text-white faqItem rounded-2xl aos-init aos-animate" x-data="{ isOpen: false }">
+              <div class="flex items-center justify-between  max-sm:gap-2" @click="isOpen = !isOpen">
+                <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                    What is your design process for creating user-friendly interfaces?
+                </p>
+                <div class="faqIcon rotate" x-show="!isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+                  <div class="faqIcon rotate " x-show="isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+              </div>
+              <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                <p class="pt-3 pr-8 cursor-pointer">
+                    I follow a user-centered design process that emphasizes creating interfaces that are both visually appealing and easy to use. This typically involves: User research, Information architecture, Wireframing and prototyping, Usability testing
+                </p>
+              </div>
+            </div>
+           
+            <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem  dark:text-white rounded-2xl aos-init aos-animate" x-data="{ isOpen: false }">
+              <div class="flex items-center justify-between  max-sm:gap-2 " @click="isOpen = !isOpen">
+                <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                    What tools do you use for UI/UX design? 
+                </p>
+                <div class="faqIcon rotate" x-show="!isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+                  <div class="faqIcon rotate" x-show="isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+              </div>
+              <div class="duration-700 faqAnswer faqOpen" x-show="isOpen">
+                <p class="pt-3 pr-8 text-n400">
+                    For UI/UX design, I primarily use Figma. 
+                    I am also familiar with tools for wireframing and prototyping like Figma prototyping features
+                </p>
+              </div>
+            </div>
+            
+            <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem rounded-2xl aos-init aos-animate" x-data="{ isOpen: false }">
+              <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                    Do you have experience working in an Agile development environment?
+                </p>
+                <div class="faqIcon rotate" x-show="!isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+                  <div class="faqIcon rotate" x-show="isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+              </div>
+              <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                <p class="pt-3 pr-8 text-n400">
+                    Yes, I have experience working in an Agile development environment. 
+                    I am familiar with methodologies like Scrum and Kanban
+                </p>
+              </div>
+            </div>
+            
+            <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem rounded-2xl aos-init aos-animate" x-data="{ isOpen: false }">
+              <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                    When would you be available to start a new position?
+                </p>
+                <div class="faqIcon rotate" x-show="!isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div>
+                  <div class="faqIcon rotate" x-show="isOpen">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                      </svg>
+                  </div> 
+              </div>
+              <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                <p class="pt-3 pr-8 text-n400">
+                    I am currently employed, but my notice period is 2 months. 
+                    I would be available to start a new position sooner, depending on the specific circumstances
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
+
