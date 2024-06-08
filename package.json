@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "tailwindcss build -i ./static/css/input.css -o ./static/css/output.css",
+    "heroku-postbuild": "npm run build"
+  },
   "devDependencies": {
     "tailwindcss": "^3.4.3"
   }
