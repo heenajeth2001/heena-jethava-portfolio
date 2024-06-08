@@ -1,4 +1,617 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<!--START BANNER SECTION -->
+<div class="dark:bg-gray-800 bg-gray-50">
+    <div class="mx-auto w-full max-w-[85rem] px-4 sm:px-6 lg:px-8 lg:py-24">
+        <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center">
+            <div class="px-4 pt-4 lg:w-2/3">
+                <div class="flex justify-start items-center">
+                    <a href="{{url_for('index')}}">
+                        <p class="text-base  leading-7 text-teal-800 dark:text-[#a2c3cf]">Home</p>
+                    </a>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="teal" class="size-5 m-1">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m5.25 4.5 7.5 7.5-7.5 7.5m6-15 7.5 7.5-7.5 7.5" />
+                    </svg>
+                    <p class="text-base  leading-7 text-teal-800 dark:text-[#a2c3cf]">My Resume </p>
+                </div>
+                <h1 class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
+                   My Resume</h1>
+
+                <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">Over 500+ professionally designed,
+                    fully responsive, expertly crafted component examples you can drop into your Tailwind projects and
+                    customize to your heart’s content.</p>
+                <div class="mt-8 flex flex-col sm:flex-row gap-4">
+                    <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-teal-700 text-white hover:bg-teal-900 duration-700"
+                        href="{{url_for('hire_me')}}"><span>Want to Hire me ? <span aria-hidden="true"
+                                class="text-slate-400 sm:inline">→</span></span></a>
+                    <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 after:duration-700 dark:ring-white/25 dark:text-white"
+                        href="javascript:void(0)"><span>Let's Connect <span aria-hidden="true"
+                                class="text-black/25 sm:inline dark:text-slate-400">→</span></span></a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- END BANNER SECTION -->
+
+
+<!-- START PROFILE SECTION -->
+<div class="dark:bg-gray-900 bg-gray-100">
+    <div class="flex py-20">
+        <div class="mx-auto pl-8">
+            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 pt-4 lg:w-3/4">
+                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+                        Profile</p>
+                    <div class="flex flex-nowrap gap-6 mt-4">
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Ms. Heena Jethava</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">+1 Year of Experience</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Dombivli</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m passionate about creating user-friendly and visually appealing web interfaces. 
+                        I enjoy the challenge of taking complex ideas and transforming them into clean, functional code.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
+                        online presence and user experience.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m always looking for new and exciting projects to work on. 
+                        If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-1 lg:pl-10 lg:pr-28">
+            <div class="flex items-center justify-center p-6 rounded">
+                <img src="{{ url_for('static', path= './img/profile.svg') }}">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END PROFILE SECTION -->
+
+
+ <!-- START EDUCATION SECTION -->
+<div class="dark:bg-gray-800 bg-gray-50">
+    <div class="flex py-20">
+        <div class="lg:grid lg:grid-cols-1 lg:pr-10 lg:pl-28">
+            <div class="flex items-center justify-center p-6 rounded">
+                <img src="{{ url_for('static', path= './img/education.svg') }}">
+            </div>
+        </div>
+
+        <div class="mx-auto pl-8">
+            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 pt-4 lg:w-3/4">
+                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+                        Education</p>
+                    <div class="flex flex-nowrap gap-6 mt-4">
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Ms. Heena Jethava</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">+1 Year of Experience</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Dombivli</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m passionate about creating user-friendly and visually appealing web interfaces. 
+                        I enjoy the challenge of taking complex ideas and transforming them into clean, functional code.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
+                        online presence and user experience.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m always looking for new and exciting projects to work on. 
+                        If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- END EDUCATION SECTION -->
+
+
+<!-- START EXPERIENCE SECTION -->
+<div class="dark:bg-gray-900 bg-gray-100">
+    <div class="flex py-20">
+        <div class="mx-auto pl-8">
+            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 pt-4 lg:w-3/4">
+                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+                        Experience</p>
+                    <div class="flex flex-nowrap gap-6 mt-4">
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Ms. Heena Jethava</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">+1 Year of Experience</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Dombivli</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m passionate about creating user-friendly and visually appealing web interfaces. 
+                        I enjoy the challenge of taking complex ideas and transforming them into clean, functional code.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
+                        online presence and user experience.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m always looking for new and exciting projects to work on. 
+                        If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-1 lg:pl-10 lg:pr-28">
+            <div class="flex items-center justify-center p-6 rounded">
+                <img src="{{ url_for('static', path= './img/experience.svg') }}">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END EXPERIENCE SECTION -->
+
+
+ <!-- START CERTIFICATION SECTION -->
+ <div class="dark:bg-gray-800 bg-gray-50">
+    <div class="flex py-20">
+        <div class="lg:grid lg:grid-cols-1 lg:pr-10 lg:pl-28">
+            <div class="flex items-center justify-center p-6 rounded">
+                <img src="{{ url_for('static', path= './img/certification.svg') }}">
+            </div>
+        </div>
+
+        <div class="mx-auto pl-8">
+            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 pt-4 lg:w-3/4">
+                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+                        Certification</p>
+                    <div class="flex flex-nowrap gap-6 mt-4">
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Ms. Heena Jethava</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">+1 Year of Experience</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Dombivli</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m passionate about creating user-friendly and visually appealing web interfaces. 
+                        I enjoy the challenge of taking complex ideas and transforming them into clean, functional code.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
+                        online presence and user experience.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m always looking for new and exciting projects to work on. 
+                        If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- END CERTIFICATION SECTION -->
+
+ <!-- START SKILLS SECTION -->
+<div class="dark:bg-gray-900 bg-gray-100">
+    <div class="flex py-20">
+        <div class="mx-auto pl-8">
+            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 pt-4 lg:w-3/4">
+                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+                        Skills</p>
+                    <div class="flex flex-nowrap gap-6 mt-4">
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Ms. Heena Jethava</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0M12 12.75h.008v.008H12v-.008Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">+1 Year of Experience</span>
+                        </div>
+                        <div class="flex items-center text-sm font-medium text-slate-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                              </svg>
+                              
+                            <span class="ml-2.5">Dombivli</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m passionate about creating user-friendly and visually appealing web interfaces. 
+                        I enjoy the challenge of taking complex ideas and transforming them into clean, functional code.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
+                        online presence and user experience.</p>
+                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
+                        I’m always looking for new and exciting projects to work on. 
+                        If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:grid lg:grid-cols-1 lg:pl-10 lg:pr-28">
+            <div class="flex items-center justify-center p-6 rounded">
+                <img src="{{ url_for('static', path= './img/skills.svg') }}">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SKILLS SECTION -->
+
+
+ <!-- HERO SECTION -->
+<div class="dark:bg-gray-800 bg-gray-50">
+    <div class="mx-auto w-full max-w-[85rem] px-4 py-20 sm:px-6 lg:px-8">
+        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-4 gap-10 ">
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m.75 12 3 3m0 0 3-3m-3 3v-6m-1.5-9H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                      </svg>
+                      
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I approach innovative solutions that are both
+                    functional and visually appealing.</p>
+              
+                <button
+                    class="font-medium text-slate-50 dark:hover:text-teal-50 mt-5 bg-slate-800 border border-slate-700 dark:border-slate-700 dark:hover:border-slate-700 px-4 py-1 rounded duration-700">
+                    My Resume/CV
+                </button>
+            </div>
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
+                      </svg>
+                      
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I enjoy getting down to the code and building software
+                    solutions that work flawlessly.</p>
+                <button
+                class="font-medium text-slate-50 dark:hover:text-teal-50 mt-5 bg-slate-800 border border-slate-700 dark:border-slate-700 dark:hover:border-slate-700 px-4 py-1 rounded duration-700">
+                Blogs/Article
+            </button>
+            </div>
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z" />
+                      </svg>
+                      
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I'm always learning & staying up-to-date on the latest
+                    technologies to deliver the best.</p>
+                <button
+                    class="font-medium text-slate-50 dark:hover:text-teal-50 mt-5 bg-slate-800 border border-slate-700 dark:border-slate-700 dark:hover:border-slate-700 px-4 py-1 rounded duration-700">
+                    Want to Hire me?
+                </button>
+            </div>
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700 px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+                <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                      </svg>
+                      
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I'm excited to take on new challenges and help your
+                    project reach its full potential.</p>
+                <button
+                    class="font-medium text-slate-50 dark:hover:text-teal-50 mt-5 bg-slate-800 border border-slate-700 dark:border-slate-700 dark:hover:border-slate-700 px-4 py-1 rounded duration-700">
+                    Connect with me?
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- START FAQ SECTION -->
+<div class="dark:bg-gray-900 bg-gray-100">
+    <section class="py-20 lg:px-24 px-8">
+        <div class="container grid grid-cols-12 gap-6 xl:gap-10">
+            <div
+                class="col-span-12 p-4 border dark:border-slate-500 rounded-xl sm:px-10 sm:py-9 lg:col-span-5 bg-white dark:bg-gray-700">
+                <p
+                    class="mt-4 text-3xl flex justify-center font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
+                    FAQs</p>
+                <div class="p-4 mb-6 rounded-xl sm:p-6">
+                    <div class="flex items-center justify-center gap-3">
+                        <img class="h-auto max-w-full rounded-lg size-24"
+                            src="{{ url_for('static', path= './img/faq.gif') }}" alt="">
+                    </div>
+                </div>
+
+                <div class="p-4 mb-6 border dark:border-slate-500 rounded-xl sm:p-6">
+                    <div class="flex items-center justify-start gap-3">
+                        <div
+                            class="flex items-center justify-center p-3 border dark:border-slate-500 rounded-2xl text-b300 sm:p-5 dark:text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                            </svg>
+                        </div>
+                        <div class="">
+                            <h5 class="heading-5 dark:text-white">Still have questions?</h5>
+                            <p class="pt-3 dark:text-white">
+                                Can’t find the answer you’re looking for?Please chat to our
+                                friendly team!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="javascript:void(0)"
+                    class="relative flex items-center justify-center overflow-hidden rounded-xl 
+            px-4 py-3 font-semibold  duration-700 after:absolute after:inset-0 after:left-0 after:w-0 after:rounded-xl bg-teal-700 hover:bg-teal-900 text-white after:duration-700 hover:after:w-[calc(100%+2px)] sm:px-8">
+                    <span class="relative z-10 dark:text-white">Get In Touch</span>
+                </a>
+            </div>
+
+            <div
+                class="flex flex-col items-start dark:text-white justify-center col-span-12 gap-6 p-4  rounded-xl sm:p-10 lg:col-span-7 dark:bg-gray-700 bg-white">
+                <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem rounded-2xl aos-init aos-animate"
+                    x-data="{ isOpen: false }">
+                    <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                        <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                            Do you have experience with version control systems like Git?
+                        </p>
+                        <div class="faqIcon rotate" x-show="!isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div class="faqIcon rotate" x-show="isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="duration-700" x-show="isOpen">
+                        <p class="pt-3">
+                            Yes, I am proficient in using Git for version control. I understand concepts like branching,
+                            merging, and conflict resolution.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="px-4 py-3 overflow-hidden border dark:border-slate-500  dark:text-white faqItem rounded-2xl aos-init aos-animate"
+                    x-data="{ isOpen: false }">
+                    <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                        <p class="text-base font-medium cursor-pointer sm:text-lg pr-20 ">
+                            Have you worked with any API integrations?
+                        </p>
+                        <div class="faqIcon rotate" x-show="!isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div class="faqIcon rotate " x-show="isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                        <p class="pt-3 pr-8 cursor-pointer">
+                            Yes, I have experience integrating APIs into web applications. I am comfortable working with
+                            API documentation and utilizing libraries or frameworks to interact with APIs efficiently.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="px-4 py-3 overflow-hidden border dark:border-slate-500  dark:text-white faqItem rounded-2xl aos-init aos-animate"
+                    x-data="{ isOpen: false }">
+                    <div class="flex items-center justify-between  max-sm:gap-2" @click="isOpen = !isOpen">
+                        <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                            What is your design process for creating user-friendly interfaces?
+                        </p>
+                        <div class="faqIcon rotate" x-show="!isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div class="faqIcon rotate " x-show="isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                        <p class="pt-3 pr-8 cursor-pointer">
+                            I follow a user-centered design process that emphasizes creating interfaces that are both
+                            visually appealing and easy to use. This typically involves: User research, Information
+                            architecture, Wireframing and prototyping, Usability testing
+                        </p>
+                    </div>
+                </div>
+
+                <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem  dark:text-white rounded-2xl aos-init aos-animate"
+                    x-data="{ isOpen: false }">
+                    <div class="flex items-center justify-between  max-sm:gap-2 " @click="isOpen = !isOpen">
+                        <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                            What tools do you use for UI/UX design?
+                        </p>
+                        <div class="faqIcon rotate" x-show="!isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div class="faqIcon rotate" x-show="isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="duration-700 faqAnswer faqOpen" x-show="isOpen">
+                        <p class="pt-3 pr-8 text-n400">
+                            For UI/UX design, I primarily use Figma.
+                            I am also familiar with tools for wireframing and prototyping like Figma prototyping
+                            features
+                        </p>
+                    </div>
+                </div>
+
+                <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem rounded-2xl aos-init aos-animate"
+                    x-data="{ isOpen: false }">
+                    <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                        <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                            Do you have experience working in an Agile development environment?
+                        </p>
+                        <div class="faqIcon rotate" x-show="!isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div class="faqIcon rotate" x-show="isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                        <p class="pt-3 pr-8 text-n400">
+                            Yes, I have experience working in an Agile development environment.
+                            I am familiar with methodologies like Scrum and Kanban
+                        </p>
+                    </div>
+                </div>
+
+                <div class="px-4 py-3 overflow-hidden border dark:border-slate-500 faqItem rounded-2xl aos-init aos-animate"
+                    x-data="{ isOpen: false }">
+                    <div class="flex items-center justify-between max-sm:gap-2" @click="isOpen = !isOpen">
+                        <p class="text-base font-medium cursor-pointer sm:text-lg pr-20">
+                            When would you be available to start a new position?
+                        </p>
+                        <div class="faqIcon rotate" x-show="!isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                        <div class="faqIcon rotate" x-show="isOpen">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="m9 12.75 3 3m0 0 3-3m-3 3v-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="duration-700 faqAnswer faqClose" x-show="isOpen">
+                        <p class="pt-3 pr-8 text-n400">
+                            I am currently employed, but my notice period is 2 months.
+                            I would be available to start a new position sooner, depending on the specific circumstances
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- END FAQ SECTION -->
+
 {% endblock %}
