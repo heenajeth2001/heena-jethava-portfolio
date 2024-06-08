@@ -25,7 +25,7 @@
                     customize to your heart’s content.</p>
                 <div class="mt-8 flex flex-col sm:flex-row gap-4">
                     <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-teal-700 text-white hover:bg-teal-900 duration-700"
-                        href="{{url_for('hire_me')}}"><span>Want to Hire me ? <span aria-hidden="true"
+                        href="javascript:void(0)"><span>Want to Hire me ? <span aria-hidden="true"
                                 class="text-slate-400 sm:inline">→</span></span></a>
                     <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 after:duration-700 dark:ring-white/25 dark:text-white"
                         href="javascript:void(0)"><span>Let's Connect <span aria-hidden="true"
@@ -39,15 +39,15 @@
 <!-- END BANNER SECTION -->
 
 
-<!-- START PROFILE SECTION -->
+<!-- PROFILE SECTION -->
 <div class="dark:bg-gray-900 bg-gray-100">
-    <div class="flex py-20">
-        <div class="mx-auto pl-8">
-            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 pt-4 lg:w-3/4">
-                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
-                        Profile</p>
-                    <div class="flex flex-nowrap gap-6 mt-4">
+    <div class="flex py-20 flex-col lg:flex-row">
+        <div class="mx-auto lg:pl-8">
+            <div class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 lg:w-3/4 sm:w-1/4">
+                    <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
+                        My Profile</p>
+                    <div class="flex flex-wrap gap-6 mt-4">
                         <div class="flex items-center text-sm font-medium text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -80,36 +80,36 @@
                     <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
                         I’m always looking for new and exciting projects to work on. 
                         If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
-                    
                 </div>
             </div>
         </div>
 
-        <div class="lg:grid lg:grid-cols-1 lg:pl-10 lg:pr-28">
+        <div class="grid grid-cols-1 gap-4 lg:pl-10 lg:pr-28 pr-10 pl-10 lg:mt-0 mt-7">
             <div class="flex items-center justify-center p-6 rounded">
                 <img src="{{ url_for('static', path= './img/profile.svg') }}">
             </div>
         </div>
     </div>
 </div>
-<!-- END PROFILE SECTION -->
+ <!--PROFILE SECTION  -->
+
 
 
  <!-- START EDUCATION SECTION -->
 <div class="dark:bg-gray-800 bg-gray-50">
-    <div class="flex py-20">
-        <div class="lg:grid lg:grid-cols-1 lg:pr-10 lg:pl-28">
+    <div class="flex py-20 flex-col lg:flex-row">
+        <div class="grid grid-cols-1 gap-4 lg:pr-10 lg:pl-28 pr-10 pl-10 lg:mt-0 mt-7">
             <div class="flex items-center justify-center p-6 rounded">
                 <img src="{{ url_for('static', path= './img/education.svg') }}">
             </div>
         </div>
-
-        <div class="mx-auto pl-8">
-            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 pt-4 lg:w-3/4">
-                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+        
+        <div class="mx-auto lg:pl-8">
+            <div class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 lg:w-3/4 sm:w-1/4">
+                    <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
                         Education</p>
-                    <div class="flex flex-nowrap gap-6 mt-4">
+                    <div class="flex flex-wrap gap-6 mt-4">
                         <div class="flex items-center text-sm font-medium text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -142,7 +142,6 @@
                     <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
                         I’m always looking for new and exciting projects to work on. 
                         If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
-                    
                 </div>
             </div>
         </div>
@@ -153,13 +152,13 @@
 
 <!-- START EXPERIENCE SECTION -->
 <div class="dark:bg-gray-900 bg-gray-100">
-    <div class="flex py-20">
-        <div class="mx-auto pl-8">
-            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 pt-4 lg:w-3/4">
-                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+    <div class="flex py-20 flex-col lg:flex-row">
+        <div class="mx-auto lg:pl-8">
+            <div class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 lg:w-3/4 sm:w-1/4">
+                    <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
                         Experience</p>
-                    <div class="flex flex-nowrap gap-6 mt-4">
+                    <div class="flex flex-wrap gap-6 mt-4">
                         <div class="flex items-center text-sm font-medium text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -192,12 +191,11 @@
                     <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
                         I’m always looking for new and exciting projects to work on. 
                         If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
-                    
                 </div>
             </div>
         </div>
 
-        <div class="lg:grid lg:grid-cols-1 lg:pl-10 lg:pr-28">
+        <div class="grid grid-cols-1 gap-4 lg:pl-10 lg:pr-28 pr-10 pl-10 lg:mt-0 mt-7">
             <div class="flex items-center justify-center p-6 rounded">
                 <img src="{{ url_for('static', path= './img/experience.svg') }}">
             </div>
@@ -209,19 +207,19 @@
 
  <!-- START CERTIFICATION SECTION -->
  <div class="dark:bg-gray-800 bg-gray-50">
-    <div class="flex py-20">
-        <div class="lg:grid lg:grid-cols-1 lg:pr-10 lg:pl-28">
+    <div class="flex py-20 flex-col lg:flex-row">
+        <div class="grid grid-cols-1 gap-4 lg:pr-10 lg:pl-28 pr-10 pl-10 lg:mt-0 mt-7">
             <div class="flex items-center justify-center p-6 rounded">
                 <img src="{{ url_for('static', path= './img/certification.svg') }}">
             </div>
         </div>
-
-        <div class="mx-auto pl-8">
-            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 pt-4 lg:w-3/4">
-                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+        
+        <div class="mx-auto lg:pl-8">
+            <div class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 lg:w-3/4 sm:w-1/4">
+                    <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
                         Certification</p>
-                    <div class="flex flex-nowrap gap-6 mt-4">
+                    <div class="flex flex-wrap gap-6 mt-4">
                         <div class="flex items-center text-sm font-medium text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -264,13 +262,13 @@
 
  <!-- START SKILLS SECTION -->
 <div class="dark:bg-gray-900 bg-gray-100">
-    <div class="flex py-20">
-        <div class="mx-auto pl-8">
-            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 pt-4 lg:w-3/4">
-                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
+    <div class="flex py-20 flex-col lg:flex-row">
+        <div class="mx-auto lg:pl-8">
+            <div class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 lg:w-3/4 sm:w-1/4">
+                    <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
                         Skills</p>
-                    <div class="flex flex-nowrap gap-6 mt-4">
+                    <div class="flex flex-wrap gap-6 mt-4">
                         <div class="flex items-center text-sm font-medium text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -308,7 +306,7 @@
             </div>
         </div>
 
-        <div class="lg:grid lg:grid-cols-1 lg:pl-10 lg:pr-28">
+        <div class="grid grid-cols-1 gap-4 lg:pl-10 lg:pr-28 pr-10 pl-10 lg:mt-0 mt-7">
             <div class="flex items-center justify-center p-6 rounded">
                 <img src="{{ url_for('static', path= './img/skills.svg') }}">
             </div>

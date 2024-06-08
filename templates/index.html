@@ -43,7 +43,7 @@
                     customize to your heart’s content.</p>
                 <div class="mt-8 flex flex-col sm:flex-row gap-4">
                     <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-teal-700 text-white hover:bg-teal-900 duration-700" 
-                        href="{{url_for('hire_me')}}"><span>Want to Hire me ? <span aria-hidden="true"
+                        href="javascript:void(0)"><span>Want to Hire me ? <span aria-hidden="true"
                                 class="text-slate-400 sm:inline">→</span></span></a>
                     <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 after:duration-700 dark:ring-white/25 dark:text-white"
                         href="javascript:void(0)"><span>Let's Connect <span aria-hidden="true"
@@ -250,13 +250,13 @@
 
 <!-- ABOUT ME SECTION -->
  <div class="dark:bg-gray-800 bg-gray-50">
-    <div class="flex py-20">
-        <div class="mx-auto pl-8">
-            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 pt-4 lg:w-3/4">
+    <div class="flex py-20 flex-col lg:flex-row">
+        <div class="mx-auto lg:pl-8">
+            <div class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4 lg:w-3/4 sm:w-1/4">
                     <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
                         About me</p>
-                    <div class="flex flex-nowrap gap-6 mt-4">
+                    <div class="flex flex-wrap gap-6 mt-4">
                         <div class="flex items-center text-sm font-medium text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -301,16 +301,16 @@
             </div>
         </div>
 
-        <div class="lg:grid lg:grid-cols-2 gap-4 lg:pl-10 lg:pr-28">
-            <div class="grid gap-4">
-                <div class="">
+        <div class="grid grid-cols-2 gap-4 lg:pl-10 lg:pr-28 pr-10 pl-10 lg:mt-0 mt-7">
+            <div class="grid gap-4 grid-cols-1 ">
+                <div>
                     <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/oneflow.jpg') }}" alt="Image 1">
                 </div>
                 <div>
                     <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 2">
                 </div>
             </div>
-            <div class="grid gap-4">
+            <div class="grid gap-4 grid-cols-1">
                 <div>
                     <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 3">
                 </div>
@@ -319,6 +319,7 @@
                 </div>
             </div>
         </div>
+        
         
     </div>
 
@@ -335,7 +336,7 @@
                 FAQs</p>
             <div class="p-4 mb-6 rounded-xl sm:p-6">
                 <div class="flex items-center justify-center gap-3">
-                      <img class="h-auto max-w-full rounded-lg size-24" src="{{ url_for('static', path= './img/faq.gif') }}"
+                      <img class="h-auto max-w-full rounded-lg size-56" src="{{ url_for('static', path= './img/faq.svg') }}"
                             alt="">  
                 </div>
               </div>
