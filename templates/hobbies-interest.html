@@ -1,22 +1,24 @@
 {% extends 'base.html' %}
-
+{% block title %}
+Hobbies & Interest - Heena Jethava Portfolio
+{% endblock %}
 {% block content %}
-
- <!-- START HOBBIES/INTEREST SECTION -->
- <div class="dark:bg-gray-900 bg-gray-50">
-    <div class="flex py-[4.9rem]">
-        <div class="lg:grid lg:grid-cols-1 lg:pr-10 lg:pl-28">
-            <div class="flex items-center justify-center p-6 rounded">
-                <img src="{{ url_for('static', path= './img/hobbies.svg') }}">
+<!-- HOBBIES SECTION -->
+<div class="dark:bg-gray-900 bg-gray-100">
+    <div class="flex py-20 flex-col lg:flex-row ">
+        
+        <div class="grid grid-cols-1 gap-4 lg:pl-10 lg:pr-28 pr-10 pl-10 lg:mt-0 mt-7">
+            <div class="flex items-center justify-center p-6">
+                <img class="" src="{{ url_for('static', path= './img/hobbies.svg') }}">
             </div>
         </div>
 
-        <div class="mx-auto pl-8">
-            <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 pt-4 lg:w-3/4">
-                    <p class="mt-4 text-2xl font-bold text-black sm:text-2xl sm:leading-[3.5rem] dark:text-white">
-                        Hobbies & Interest</p>
-                    <div class="flex flex-nowrap gap-6 mt-4">
+        <div class="mx-auto lg:pl-8">
+            <div class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
+                <div class="px-4  pt-4 lg:w-3/4 sm:w-1/4">
+                    <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
+                       Hobbies & Interest</p>
+                    <div class="flex flex-wrap gap-6 mt-4">
                         <div class="flex items-center text-sm font-medium text-slate-500">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
@@ -47,17 +49,15 @@
                         I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
                         online presence and user experience.</p>
                     <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
-                        I’ve built X responsive websites and web applications using these technologies, helping businesses improve their 
-                        online presence and user experience.</p>
-                    <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">
                         I’m always looking for new and exciting projects to work on. 
                         If you’re looking for a <span class="font-bold border-b border-dashed italic"><a href="">skilled?</a></span> UI UX developer with the addition of software development, feel free to <span class="font-bold border-b border-dashed italic"><a href="">get in touch! </a></span> </p>
-                    
                 </div>
             </div>
         </div>
+       
     </div>
 </div>
- <!-- END HOBBIES/INTEREST SECTION -->
+ <!--HOBBIES SECTION  -->
+
 
 {% endblock %}
