@@ -3,7 +3,7 @@
 
 <!-- BANNER SECTION -->
 <div class="dark:bg-gray-800 bg-gray-50">
-    <div class="mx-auto w-full max-w-[85rem] px-4 sm:px-6 lg:px-8 lg:py-24">
+    <div class="mx-auto w-full max-w-[85rem] px-4 sm:px-6 lg:px-8 lg:py-24 py-24">
         <div class="relative z-20 mx-auto max-w-lg sm:max-w-none lg:max-w-full lg:flex lg:items-center">
             <div class="px-4 pt-4 lg:w-2/3">
                 <h1 class="text-base font-bold leading-7 text-teal-700 dark:text-[#a2c3cf]">Building beautiful
@@ -52,7 +52,7 @@
                                 class="text-black/25 sm:inline dark:text-slate-400">→</span></span></a>
                 </div>
             </div>
-            
+
             <div class="relative z-10 mt-12 select-none lg:flex lg:w-1/3">
                 <div class="z-20 flex flex-col lg:w-full">
                     <div class="relative p-4">
@@ -197,12 +197,12 @@
     </div>
 </div>
 
-
 <!-- HERO SECTION -->
 <div class="dark:bg-gray-900 bg-gray-100">
     <div class="mx-auto w-full max-w-[85rem] px-8 py-20 sm:px-6 lg:px-8 ">
         <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-4 gap-10 ">
-            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20 ">
+            <div
+                class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20 ">
                 <div class="flex items-center justify-center p-6 rounded-full bg-teal-700 text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -271,7 +271,7 @@
         <div class="mx-auto lg:pl-8 ">
             <div
                 class="relative z-20 mx-auto max-w-80 sm:max-w-80 lg:max-w-full lg:flex lg:items-center lg:justify-center">
-                <div class="px-4 lg:w-3/4 sm:w-1/4">
+                <div class="lg:w-3/4 sm:w-1/4">
                     <p class="mt-4 text-3xl font-bold text-black sm:text-5xl sm:leading-[3.5rem] dark:text-white">
                         About me</p>
                     <div class="flex flex-wrap gap-6 mt-4">
@@ -336,18 +336,18 @@
             </div>
         </div>
 
-        <div class="grid grid-cols-2 gap-10 lg:pl-10 lg:pr-28 pr-10 pl-10 lg:mt-0 mt-7">
+        <div class="grid grid-cols-2 gap-6 lg:gap-10 lg:pl-10 lg:pr-28 pr-14 pl-14 lg:mt-0 mt-7">
             <div class="grid grid-cols-1 ">
                 <img class="h-auto w-full shadow-md rounded-lg" src="{{ url_for('static', path= './img/oneflow.jpg') }}"
-                    alt="Image 1" loading="lazy">
-                <img class="h-auto w-full shadow-md rounded-lg"
-                    src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 2" loading="lazy">
+                    alt="Image 1">
+                <img class="h-auto w-full shadow-md rounded-lg mt-6 lg:mt-0"
+                    src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 2">
             </div>
             <div class="grid  grid-cols-1">
                 <img class="h-auto w-full shadow-md rounded-lg"
-                    src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 3" loading="lazy">
-                <img class="h-auto w-full shadow-md rounded-lg"
-                    src="{{ url_for('static', path= './img/blinkit-clone.jpg') }}" alt="Image 4" loading="lazy">
+                    src="{{ url_for('static', path= './img/image-10.jpg') }}" alt="Image 3">
+                <img class="h-auto w-full shadow-md rounded-lg mt-6 lg:mt-0"
+                    src="{{ url_for('static', path= './img/blinkit-clone.jpg') }}" alt="Image 4">
             </div>
         </div>
     </div>
