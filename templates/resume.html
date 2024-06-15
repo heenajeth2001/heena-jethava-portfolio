@@ -19,16 +19,18 @@ Resume - Heena Jethava Portfolio
                     </svg>
                     <p class="text-base  leading-7 text-teal-800 dark:text-[#a2c3cf]">My Resume </p>
                 </div>
-                <h1 class="mt-4 text-3xl font-bold text-black  sm:text-5xl sm:leading-[3.5rem] dark:text-white">
-                   My Resume</h1>
+               
+                    <h1 class="mt-4 text-3xl font-bold text-black  sm:text-5xl sm:leading-[3.5rem] dark:text-white">
+                       My Resume</h1>
+              
 
                 <p class="mt-4 text-base leading-7 text-slate-600 dark:text-gray-400">Explore My Profile, Education, Experience, Certifications and Skills in Software Development & UI/UX Design.</p>
                 <div class="mt-8 flex flex-col sm:flex-row gap-4">
                     <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-teal-700 text-white hover:bg-teal-900 duration-700"
-                        href="javascript:void(0)"><span>Want to Hire me ? <span aria-hidden="true"
+                    href="mailto:heenajeth2001@gmail.com?subject=Hiring Inquiry&body=Hi Heena,%0D%0A%0D%0AI hope this message finds you well. I came across your profile and I'm impressed by your background. I am currently looking to expand my team and would like to discuss a potential opportunity with you. Here are some initial details:%0D%0A%0D%0A- **Role**: [Position Title]%0D%0A- **Description**: [Brief description of the role and responsibilities]%0D%0A- **Timeline**: [Expected timeline for hiring]%0D%0A- **Location**: [If relevant, specify location or remote]%0D%0A%0D%0APlease let me know your availability to discuss this further. Looking forward to hearing from you!%0D%0A%0D%0AThank you,%0D%0A%0D%0A[Your Name]%0D%0A[Your Contact Information]"><span>Want to Hire me ? <span aria-hidden="true"
                                 class="text-slate-400 sm:inline">→</span></span></a>
                     <a class="inline-flex justify-center rounded-lg text-sm font-semibold py-3 px-4 bg-white/0 text-slate-900 ring-1 ring-slate-900/10 hover:bg-white/25 hover:ring-slate-900/15 after:duration-700 dark:ring-white/25 dark:text-white"
-                        href="javascript:void(0)"><span>Let's Connect <span aria-hidden="true"
+                    href="{{url_for('connect_with_me')}}"><span>Let's Connect <span aria-hidden="true"
                                 class="text-black/25 sm:inline dark:text-slate-400">→</span></span></a>
                 </div>
             </div>
@@ -207,10 +209,12 @@ Resume - Heena Jethava Portfolio
                 <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I approach innovative solutions that are both
                     functional and visually appealing.</p>
               
+                    <a href="{{ url_for('static', path= './resume.pdf') }}" download="Heena_Jethava_Resume.pdf">
                 <button
                     class="font-medium text-slate-50 dark:hover:text-teal-50 mt-5 bg-slate-800 border border-slate-700 dark:border-slate-700 dark:hover:border-slate-700 px-4 py-1 rounded duration-700">
                     My Resume/CV
                 </button>
+                </a>
             </div>
             <div
                 class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
@@ -237,10 +241,12 @@ Resume - Heena Jethava Portfolio
                 </div>
                 <p class="pt-8 pb-3 heading-5 dark:text-gray-400">I'm always learning & staying up-to-date on the latest
                     technologies to deliver the best.</p>
-                <button
+                <a href="mailto:heenajeth2001@gmail.com?subject=Hiring Inquiry&body=Hi Heena,%0D%0A%0D%0AI hope this message finds you well. I came across your profile and I'm impressed by your background. I am currently looking to expand my team and would like to discuss a potential opportunity with you. Here are some initial details:%0D%0A%0D%0A- **Role**: [Position Title]%0D%0A- **Description**: [Brief description of the role and responsibilities]%0D%0A- **Timeline**: [Expected timeline for hiring]%0D%0A- **Location**: [If relevant, specify location or remote]%0D%0A%0D%0APlease let me know your availability to discuss this further. Looking forward to hearing from you!%0D%0A%0D%0AThank you,%0D%0A%0D%0A[Your Name]%0D%0A[Your Contact Information]">
+                    <button
                     class="font-medium text-slate-50 dark:hover:text-teal-50 mt-5 bg-slate-800 border border-slate-700 dark:border-slate-700 dark:hover:border-slate-700 px-4 py-1 rounded duration-700">
                     Want to Hire me?
                 </button>
+            </a>
             </div>
             <div
                 class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700 px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
