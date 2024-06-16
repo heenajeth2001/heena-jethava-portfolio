@@ -12,11 +12,12 @@
     <script defer src="https://tailwindui.com/build/assets/app-32827a4c.js"></script>
     <script src="{{ url_for('static' , path='./js/darkMode.js') }}"></script>
     <script src="{{ url_for('static', path='./js/activeLink.js') }}"></script>
+    <script src="{{ url_for('static', path='./js/modal.js') }}"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <title>{% block title %}Heena Jethava Portfolio{% endblock %}</title>
 </head>
 
-<body :class="{ 'dark': isDarkMode }">
+<body :class="{ 'dark': isDarkMode }" class="scrollbar-thin overflow-y-auto">
     {% include 'layout/navbar.html' %}
     {% block content %}
     {% endblock %}

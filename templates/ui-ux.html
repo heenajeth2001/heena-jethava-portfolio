@@ -34,134 +34,215 @@ UI/UX Design - Heena Jethava Portfolio
 </div>
 <!-- END BANNER SECTION -->
 
-
 <!-- START HERO SECTION -->
 <div class="dark:bg-gray-900 bg-gray-100">
     <div class="mx-auto w-full max-w-[85rem] px-8 py-20 sm:px-6 lg:px-8">
         <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-3 gap-10 ">
-            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg  dark:border-slate-500  dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
                 <p class="font-medium dark:text-white">
-                    Blinkit Clone - Ecommerce
+                   Project Title
                  </p>
                 <div class="flex items-center justify-center p-6 rounded">
                     <img src="{{ url_for('static', path= './img/ui-ux-img1.svg') }}">
                 </div>
                 <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
                     functional and visually appealing.</p>
-                <p class="font-medium  flex justify-center items-center dark:text-gray-400">
+                <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                       </svg>
                     <span> 23 Jan 12 - 23 Jan 20 </span>
                 </p>
-                <button class="font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-700 dark:border-teal-100 dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
-                    View more
+                <div class="flex justify-center items-center gap-3">
+                    <a href="">
+                        <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                            View Prototype
+                        </button>
+                </a>
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                    More Details
                 </button>
+                </div>
+               
+            </div>
+            <div id="modal-backdrop" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+            <!-- Main modal -->
+            <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50  items-center justify-center overflow-y-auto overflow-x-hidden">
+                <div class="relative p-4 w-full max-w-2xl max-h-full">
+                    <!-- Modal content -->
+                    <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                        <!-- Modal header -->
+                        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                Terms of Service
+                            </h3>
+                            <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                </svg>
+                                <span class="sr-only">Close modal</span>
+                            </button>
+                        </div>
+                        <!-- Modal body -->
+                        <div class="p-4 md:p-5 space-y-4">
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                            </p>
+                            <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                            </p>
+                        </div>
+                        <!-- Modal footer -->
+                        <div class="flex justify-end items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                            <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-teal-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+            
+            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg dark:border-slate-500    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
                 <p class="font-medium dark:text-white">
-                    Car Booking App
+                    Project Title
                  </p>
                 <div class="flex items-center justify-center p-6 rounded">
                     <img src="{{ url_for('static', path= './img/ui-ux-img1.svg') }}">
                 </div>
                 <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
                     functional and visually appealing.</p>
-                <p class="font-medium  flex justify-center items-center dark:text-gray-400">
+                <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                       </svg>
                     <span> 23 Jan 12 - 23 Jan 20 </span>
                 </p>
-                <button class="font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-700 dark:border-teal-100 dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
-                    View more
+                <div class="flex justify-center items-center gap-3">
+                    <a href="">
+                    <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                        View Prototype
+                    </button>
+                </a>
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                    More Details
                 </button>
-            </div>
-            
-            
-            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
-                <p class="font-medium dark:text-white">
-                    Fresh Vegetables & Fruits
-                 </p>
-                <div class="flex items-center justify-center p-6 rounded">
-                    <img src="{{ url_for('static', path= './img/ui-ux-img1.svg') }}">
                 </div>
-                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
-                    functional and visually appealing.</p>
-                <p class="font-medium  flex justify-center items-center dark:text-gray-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
-                      </svg>
-                    <span> 23 Jan 12 - 23 Jan 20 </span>
-                </p>
-                <button class="font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-700 dark:border-teal-100 dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
-                    View more
-                </button>
             </div>
             
-        </div>
-        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
-            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
                 <p class="font-medium dark:text-white">
                     Blinkit Web Landing Page - Ecommerce
                  </p>
                 <div class="flex items-center justify-center py-6 rounded">
                     <img src="{{ url_for('static', path= './img/blinkit.png') }}">
                 </div>
-                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
-                    functional and visually appealing.</p>
-                <p class="font-medium  flex justify-center items-center dark:text-gray-400">
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I Designed a Visually Appealing and User-Friendly Landing page for a Blinkit Clone.</p>
+                <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                       </svg>
-                    <span> 23 Jan 12 - 23 Jan 20 </span>
+                    <span> 24 May 04 - 24 May 05 </span>
                 </p>
-                <button class="font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-700 dark:border-teal-100 dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
-                    View more
+                <div class="flex justify-center items-center gap-3">
+                    <a target="_blank" href="https://www.figma.com/proto/MuIw4vjFAbFJvBrhW90Wox/Blinkit-Web-Landing-Page-Clone?node-id=117-2632&t=zFZknpjz72qStNYn-1">
+                        <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                            View Prototype
+                        </button>
+                </a>
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                    More Details
                 </button>
-            </div>
-            
-            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
-                <p class="font-medium dark:text-white">
-                    Car Booking Web Landing Page
-                 </p>
-                <div class="flex items-center justify-center py-6 rounded ">
-                    <img src="{{ url_for('static', path= './img/car.png') }}" >
                 </div>
-                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
-                    functional and visually appealing.</p>
-                <p class="font-medium  flex justify-center items-center dark:text-gray-400">
+            </div>
+            
+        </div>
+        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
+                <p class="font-medium dark:text-white">
+                    Fresh Food Web Landing Page
+                 </p>
+                <div class="flex items-center justify-center py-6 rounded">
+                    <img src="{{ url_for('static', path= './img/fresh.png') }}">
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I designed a user-friendly landing page for a food service to order high-quality groceries.</p>
+                <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                       </svg>
-                    <span> 23 Jan 12 - 23 Jan 20 </span>
+                    <span> 23 June 15 - 23 June 18 </span>
                 </p>
-                <button class="font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-700 dark:border-teal-100 dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
-                    View more
+                    
+            <div class="flex justify-center items-center gap-3">
+                <a target="_blank" href="https://www.figma.com/proto/mtUhUOostSZWkzX9efjlak/Fresh-Food-Web-Landing-Page?node-id=405-530&t=GtrQ4K4TGKDABJkF-1&scaling=scale-down-width&content-scaling=fixed">
+                    <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                        View Prototype
+                    </button>
+                </a>
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                    More Details
                 </button>
             </div>
+            </div>
             
-            
-            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-20">
+            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
                 <p class="font-medium dark:text-white">
                     Nike Shoe Web Landing Page
                  </p>
                 <div class="flex items-center justify-center py-6 rounded">
                     <img src="{{ url_for('static', path= './img/nike.png') }}">
                 </div>
-                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
-                    functional and visually appealing.</p>
-                <p class="font-medium  flex justify-center items-center dark:text-gray-400">
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">This Nike shoe landing page showcases the latest footwear collection with dynamic visuals.</p>
+                <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
                       </svg>
-                    <span> 23 Jan 12 - 23 Jan 20 </span>
+                    <span> 23 June 15 - 23 June 15 </span>
                 </p>
-                <button class="font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-700 dark:border-teal-100 dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
-                    View more
+                   
+            <div class="flex justify-center items-center gap-3">
+                <a target="_blank" href="https://www.figma.com/proto/tcx66e648JY6LfoX7pPQmP/Nike-Shoes-Web-Landing-Page?node-id=209-259&t=sbx4eny00kNEND30-1">
+                    <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                        View Prototype
+                    </button>
+                </a>    
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                    More Details
                 </button>
             </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-start rounded-xl shadow-lg    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
+                <p class="font-medium dark:text-white">
+                    Car Booking Web Landing Page
+                 </p>
+                <div class="flex items-center justify-center py-6 rounded ">
+                    <img src="{{ url_for('static', path= './img/car.png') }}" >
+                </div>
+                <p class="pt-8 pb-3 heading-5 dark:text-gray-200">This car booking landing page showcases my ability to build user interfaces for car rentals.</p>
+                <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                      </svg>
+                    <span> 23 Jan 12 - 23 Jan 15 </span>
+                </p>
+                    
+            <div class="flex justify-center items-center gap-3">
+                <a target="_blank" href="https://www.figma.com/proto/mtUhUOostSZWkzX9efjlak/Fresh-Food-Web-Landing-Page?node-id=405-530&t=GtrQ4K4TGKDABJkF-1&scaling=scale-down-width&content-scaling=fixed">
+                    <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                        View Prototype
+                    </button>
+                </a>    
+                <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                    More Details
+                </button>
+            </div>
+            </div>
+           
             
         </div>
     </div>
@@ -171,56 +252,91 @@ UI/UX Design - Heena Jethava Portfolio
 <!-- START TECHNOLOGY / SOFTWARES -->
 <div class="dark:bg-gray-800 bg-gray-50">
     <div class="mx-auto w-full px-8 py-20 sm:px-6 lg:px-20">
-        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-5 gap-10">
-            <div class="rounded-xl  shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-                    <h3 class="dark:text-white text-xl p-1 ">
+        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-4 gap-10">
+            <div class="flex justify-center items-center rounded-lg  shadow   dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                  </svg>
+                <h3 class=" text-xl p-1 italic ">
                         User Research
                     </h3>
             </div>
 
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-                <h3 class="dark:text-white text-xl p-1">
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6A2.25 2.25 0 0 1 6 3.75h2.25A2.25 2.25 0 0 1 10.5 6v2.25a2.25 2.25 0 0 1-2.25 2.25H6a2.25 2.25 0 0 1-2.25-2.25V6ZM3.75 15.75A2.25 2.25 0 0 1 6 13.5h2.25a2.25 2.25 0 0 1 2.25 2.25V18a2.25 2.25 0 0 1-2.25 2.25H6A2.25 2.25 0 0 1 3.75 18v-2.25ZM13.5 6a2.25 2.25 0 0 1 2.25-2.25H18A2.25 2.25 0 0 1 20.25 6v2.25A2.25 2.25 0 0 1 18 10.5h-2.25a2.25 2.25 0 0 1-2.25-2.25V6ZM13.5 15.75a2.25 2.25 0 0 1 2.25-2.25H18a2.25 2.25 0 0 1 2.25 2.25V18A2.25 2.25 0 0 1 18 20.25h-2.25A2.25 2.25 0 0 1 13.5 18v-2.25Z" />
+                  </svg>
+                <h3 class="text-xl p-1 italic">
                     Wireframing 
                 </h3>
             </div>
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-                <h3 class="dark:text-white text-xl p-1">
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3" />
+                  </svg>
+                <h3 class="text-xl p-1 italic">
                     Prototyping 
                 </h3>
             </div>
 
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-            <h3 class="dark:text-white text-xl p-1">
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+                  </svg>
+                  
+                <h3 class=" text-xl p-1 italic">
                 Information Architecture
             </h3>
             </div>
 
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-            <h3 class="dark:text-white text-xl p-1">
+            
+        </div>
+        
+        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-5 gap-10 mt-8">
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 7.125C2.25 6.504 2.754 6 3.375 6h6c.621 0 1.125.504 1.125 1.125v3.75c0 .621-.504 1.125-1.125 1.125h-6a1.125 1.125 0 0 1-1.125-1.125v-3.75ZM14.25 8.625c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v8.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-8.25ZM3.75 16.125c0-.621.504-1.125 1.125-1.125h5.25c.621 0 1.125.504 1.125 1.125v2.25c0 .621-.504 1.125-1.125 1.125h-5.25a1.125 1.125 0 0 1-1.125-1.125v-2.25Z" />
+                  </svg>
+                  
+                <h3 class=" text-xl p-1 italic">
             Visual Design
             </h3>
             </div>
-        </div>
-        
-        <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-4 gap-10 mt-8">
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-            <h3 class="dark:text-white text-xl p-1">
-            Interaction Design
+
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white  bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244" />
+                  </svg>
+                  
+                <h3 class=" text-xl p-1 italic">
+            User Personas
             </h3>
             </div>
 
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-            <h3 class="dark:text-white text-xl p-1">
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                  </svg>
+                  
+                <h3 class=" text-xl p-1 italic">
             Usability Testing
             </h3>
             </div>
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-            <h3 class="dark:text-white text-xl p-1">
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z" />
+                  </svg>
+                  
+                <h3 class=" text-xl p-1 italic">
                 UI/UX Tools
             </h3>
             </div>
-            <div class="rounded-xl shadow-lg border dark:border-slate-500 hover:border-teal-200 dark:hover:border-gray-200 bg-white dark:bg-gray-700  text-center">
-            <h3 class="dark:text-white text-xl p-1">
+            <div class="flex justify-center items-center rounded-lg shadow dark:text-white bg-white dark:bg-gray-700  text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                  </svg>
+                  
+                <h3 class=" text-xl p-1 italic">
                 Responsive Design
             </h3>
             </div>
@@ -228,7 +344,6 @@ UI/UX Design - Heena Jethava Portfolio
     </div>
 </div>
 <!-- END TECHNOLOGY / SOFTWARES -->
-
 {% include 'faq.html' %}
 
 {% endblock %}
