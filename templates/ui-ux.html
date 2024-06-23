@@ -37,6 +37,13 @@ UI/UX Design - Heena Jethava Portfolio
 <!-- START HERO SECTION -->
 <div class="dark:bg-gray-900 bg-gray-100">
     <div class="mx-auto w-full max-w-[85rem] px-8 py-20 sm:px-6 lg:px-8">
+        <div class="tabs flex justify-center mb-8 gap-5">
+            <button class="tab-button px-4 py-2 border-b border-b-teal-600 dark:text-white rounded-l" data-tab="website-design">Website Design</button>
+            <button class="tab-button px-4 py-2  border-b dark:text-white" data-tab="android-app-design">Android App Design</button>
+            <button class="tab-button px-4 py-2 border-b dark:text-white rounded-r" data-tab="ios-design">iOS Design</button>
+        </div>
+
+        <div id="website-design" class="tab-content active">
         <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-3 gap-10 ">
             <div class="flex flex-col items-center justify-start rounded-xl shadow-lg  dark:border-slate-500  dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
                 <p class="font-medium dark:text-white">
@@ -158,6 +165,9 @@ UI/UX Design - Heena Jethava Portfolio
             </div>
             
         </div>
+        </div>
+
+        <div id="android-app-design" class="tab-content">
         <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
             <div class="flex flex-col items-center justify-start rounded-xl shadow-lg    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
                 <p class="font-medium dark:text-white">
@@ -244,6 +254,131 @@ UI/UX Design - Heena Jethava Portfolio
             </div>
            
             
+        </div>
+        </div>
+
+        <div id="ios-design" class="tab-content">
+            <div class="container mx-auto grid grid-cols-1 min-[400px]:grid-cols-1 lg:grid-cols-3 gap-10 ">
+                <div class="flex flex-col items-center justify-start rounded-xl shadow-lg  dark:border-slate-500  dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
+                    <p class="font-medium dark:text-white">
+                       Project Title
+                     </p>
+                    <div class="flex items-center justify-center p-6 rounded">
+                        <img src="{{ url_for('static', path= './img/ui-ux-img1.svg') }}">
+                    </div>
+                    <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
+                        functional and visually appealing.</p>
+                    <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                          </svg>
+                        <span> 23 Jan 12 - 23 Jan 20 </span>
+                    </p>
+                    <div class="flex justify-center items-center gap-3">
+                        <a href="">
+                            <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                                View Prototype
+                            </button>
+                    </a>
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                    class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                        More Details
+                    </button>
+                    </div>
+                   
+                </div>
+                <div id="modal-backdrop" class="hidden fixed inset-0 bg-black bg-opacity-50 z-40"></div>
+                <!-- Main modal -->
+                <div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden fixed inset-0 z-50  items-center justify-center overflow-y-auto overflow-x-hidden">
+                    <div class="relative p-4 w-full max-w-2xl max-h-full">
+                        <!-- Modal content -->
+                        <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                            <!-- Modal header -->
+                            <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+                                <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                    Terms of Service
+                                </h3>
+                                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                                    <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                    </svg>
+                                    <span class="sr-only">Close modal</span>
+                                </button>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="p-4 md:p-5 space-y-4">
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                                </p>
+                                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                                    The European Union’s General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of high-risk data breaches that could personally affect them.
+                                </p>
+                            </div>
+                            <!-- Modal footer -->
+                            <div class="flex justify-end items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                <button data-modal-hide="default-modal" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-teal-700 focus:z-10 focus:ring-4 focus:ring-gray-100 dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="flex flex-col items-center justify-start rounded-xl shadow-lg dark:border-slate-500    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
+                    <p class="font-medium dark:text-white">
+                        Project Title
+                     </p>
+                    <div class="flex items-center justify-center p-6 rounded">
+                        <img src="{{ url_for('static', path= './img/ui-ux-img1.svg') }}">
+                    </div>
+                    <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I approach innovative solutions that are both
+                        functional and visually appealing.</p>
+                    <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                          </svg>
+                        <span> 23 Jan 12 - 23 Jan 20 </span>
+                    </p>
+                    <div class="flex justify-center items-center gap-3">
+                        <a href="">
+                        <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                            View Prototype
+                        </button>
+                    </a>
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                    class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                        More Details
+                    </button>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col items-center justify-start rounded-xl shadow-lg    dark:hover:border-gray-200 bg-white dark:bg-gray-700  px-6 py-10 text-center sm:px-8 sm:py-20 lg:py-10 xl:py-12">
+                    <p class="font-medium dark:text-white">
+                        Blinkit Web Landing Page - Ecommerce
+                     </p>
+                    <div class="flex items-center justify-center py-6 rounded">
+                        <img src="{{ url_for('static', path= './img/blinkit.png') }}">
+                    </div>
+                    <p class="pt-8 pb-3 heading-5 dark:text-gray-200">I Designed a Visually Appealing and User-Friendly Landing page for a Blinkit Clone.</p>
+                    <p class="font-medium  flex justify-center items-center dark:text-gray-400 text-gray-600">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 m-1">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z" />
+                          </svg>
+                        <span> 24 May 04 - 24 May 05 </span>
+                    </p>
+                    <div class="flex justify-center items-center gap-3">
+                        <a target="_blank" href="https://www.figma.com/proto/MuIw4vjFAbFJvBrhW90Wox/Blinkit-Web-Landing-Page-Clone?node-id=117-2632&t=zFZknpjz72qStNYn-1">
+                            <button class="block font-medium dark:text-teal-50 text-teal-50 mt-5  border border-teal-700  dark:hover:border-teal-700 px-4 py-1 rounded bg-teal-700 hover:text-teal-50 duration-700">
+                                View Prototype
+                            </button>
+                    </a>
+                    <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button"
+                    class="block font-medium dark:text-teal-950 dark:hover:text-teal-50 mt-5 bg-teal-50 border border-teal-50  dark:hover:border-teal-700 px-4 py-1 rounded hover:bg-teal-700 hover:text-teal-50 duration-700">
+                        More Details
+                    </button>
+                    </div>
+                </div>
+                
+            </div>
         </div>
     </div>
 </div>
@@ -344,6 +479,40 @@ UI/UX Design - Heena Jethava Portfolio
     </div>
 </div>
 <!-- END TECHNOLOGY / SOFTWARES -->
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const tabs = document.querySelectorAll(".tab-button");
+        const contents = document.querySelectorAll(".tab-content");
+
+        tabs.forEach(tab => {
+            tab.addEventListener("click", function() {
+                const target = this.getAttribute("data-tab");
+
+                tabs.forEach(t => t.classList.remove("border-b-teal-600"));
+                this.classList.add("border-b-teal-600");
+
+                contents.forEach(content => {
+                    content.classList.remove("active");
+                    if (content.getAttribute("id") === target) {
+                        content.classList.add("active");
+                    }
+                });
+            });
+        });
+    });
+</script>
+<style>
+    .tab-content {
+        display: none;
+    }
+    .tab-content.active {
+        display: block;
+    }
+
+
+
+</style>
 {% include 'faq.html' %}
 
 {% endblock %}
